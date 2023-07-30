@@ -8,6 +8,7 @@ services:
       - ./src:/var/www/html
       - ./build/apache/laravel.conf:/etc/apache2/sites-available/000-default.conf
     environment:
+      - APP_KEY=base64:HpHuprOu90YWY0Crr9sbfZgEfwPyVrpVeSKwlSbFU9g=
       - DB_CONNECTION=mysql
       - DB_HOST=db
       - DB_PORT=3306
