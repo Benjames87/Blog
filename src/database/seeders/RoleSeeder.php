@@ -18,12 +18,5 @@ class RoleSeeder extends Seeder
         // Create roles
         Role::create(['name' => 'admin']);
         Role::create(['name' => 'user']);
-
-        // Create permissions
-        Permission::create(['name' => 'create post']);
-        Permission::create(['name' => 'edit post']);
-        Permission::create(['name' => 'delete post']);
-        Permission::create(['name' => 'create comment']);
-        Permission::create(['name' => 'delete comment']);
     }
 }
